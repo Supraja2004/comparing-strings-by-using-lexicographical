@@ -1,0 +1,22 @@
+//write a program to compare 2 strings using C
+
+#include<stdio.h>
+#include<string.h>
+#define MAX_SIZE 100
+int main()
+{
+  char str1[MAX_SIZE],str2[MAX_SIZE];
+  int res;
+  printf("Enter first string:");
+  scanf("%s",str1);
+  printf("\nEnter second string:");
+  scanf("%s",str2);
+  res=strcmp(str1,str2);
+  if(res==0){
+    printf("\nFirst string is lexicographically smaller than second one");
+  }
+    else{
+      printf("\nFirst string is lexicographically greater than second one");
+    }
+    return 0;
+  }
